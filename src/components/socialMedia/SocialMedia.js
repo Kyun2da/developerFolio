@@ -46,7 +46,7 @@ export default function socialMedia() {
 
       {socialMediaLinks.blog ? (
         <a
-          href={`mailto:${socialMediaLinks.blog}`}
+          href={socialMediaLinks.blog}
           className='icon-button medium'
           target='_blank'
           rel='noopener noreferrer'
