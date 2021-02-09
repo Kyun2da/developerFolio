@@ -9,11 +9,9 @@ const illustration = {
 };
 
 const greeting = {
-  username: 'Saad Pasta',
-  title: "Hi all, I'm Saad",
-  subTitle: emoji(
-    'A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.'
-  ),
+  username: '허균',
+  title: '안녕하세요 허균입니다.',
+  subTitle: emoji('항상 성장을 갈망하고 노력하는 주니어 웹 개발자 입니다.🚀'),
   resumeLink:
     'https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing',
   displayGreeting: true, // Set false to hide this section, defaults to true
@@ -22,13 +20,14 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: 'https://github.com/saadpasta',
-  linkedin: 'https://www.linkedin.com/in/saadpasta/',
-  gmail: 'saadpasta70@gmail.com',
-  gitlab: 'https://gitlab.com/saadpasta',
-  facebook: 'https://www.facebook.com/saad.pasta7',
-  medium: 'https://medium.com/@saadpasta',
-  stackoverflow: 'https://stackoverflow.com/users/10422806/saad-pasta',
+  github: 'https://github.com/Kyun2da',
+  //linkedin: 'https://www.linkedin.com/in/saadpasta/',
+  gmail: 'kyun2dot@gmail.com',
+  //gitlab: 'https://gitlab.com/saadpasta',
+  //facebook: 'https://www.facebook.com/saad.pasta7',
+  medium: 'https://kyun2da.dev',
+  blog: 'htps://kyun2da.github.io',
+  //stackoverflow: 'https://stackoverflow.com/users/10422806/saad-pasta',
   // Instagram and Twitter are also supported in the links!
   display: true, // Set true to display this section, defaults to false
 };
@@ -36,15 +35,19 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: 'What I do',
-  subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
+  title: '기술 스택',
+  subTitle:
+    '자바스크립트 생태계를 좋아해서 자바스크립트와 관련된 기술 스택들을 주로 익혔습니다.',
   skills: [
+    emoji('⚡ Express를 활용한 서버 구축이 가능합니다.'),
     emoji(
-      '⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications'
+      '⚡ 리액트를 활용한 SPA 개발이 가능합니다. Redux와 같은 상태 라이브러리를 프로젝트에 접목 시켜본 경험이 있습니다.'
     ),
-    emoji('⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks'),
     emoji(
-      '⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean'
+      '⚡ 시퀄라이즈와 같은 ORM을 사용할 수 있고 보통 Mysql을 사용하여 DB를 설계하고 구축합니다.'
+    ),
+    emoji(
+      '⚡ 현재는 Express는 Nest.js, React에도 TypeScript를 접목시키기 위해 타입스크립트를 열심히 공부중에 있습니다.'
     ),
   ],
 
@@ -77,15 +80,11 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: 'fab fa-node',
     },
     {
-      skillName: 'swift',
-      fontAwesomeClassname: 'fab fa-swift',
-    },
-    {
       skillName: 'npm',
       fontAwesomeClassname: 'fab fa-npm',
     },
     {
-      skillName: 'sql-database',
+      skillName: 'mysql',
       fontAwesomeClassname: 'fas fa-database',
     },
     {
@@ -101,8 +100,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: 'fab fa-python',
     },
     {
-      skillName: 'docker',
-      fontAwesomeClassname: 'fab fa-docker',
+      skillName: 'git',
+      fontAwesomeClassname: 'fab fa-git',
     },
   ],
   display: true, // Set false to hide this section, defaults to true
@@ -114,24 +113,31 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: 'Harvard University',
-      logo: require('./assets/images/harvardLogo.png'),
-      subHeader: 'Master of Science in Computer Science',
-      duration: 'September 2017 - April 2019',
-      desc: 'Participated in the research of XXX and published 3 papers.',
+      schoolName: '세종대학교',
+      logo: require('./assets/images/sejong.png'),
+      subHeader: '디지털콘텐츠학과(소프트웨어학과)',
+      duration: '2015.03 ~ 2021.06 졸업 유예상태',
+      desc:
+        '프로그래밍 기본을 익히고 적성과 흥미를 찾기위해 이것저것 많은 경험을 해보았습니다.',
       descBullets: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        'C++을 활용한 게임 만들기',
+        '광진구 연계 앱 인벤터 멘토링',
+        '데이터 분석 및 데이터 시각화 프로젝트',
+        '안드로이드를 활용한 외국인 학교 도움 프로젝트',
+        '유니티를 활용한 가구 AR 배치 프로젝트',
       ],
     },
     {
-      schoolName: 'Stanford University',
-      logo: require('./assets/images/stanfordLogo.png'),
+      schoolName: '육군 9사단',
+      logo: require('./assets/images/soldier.jpg'),
+      duration: '2016.02 ~ 2017.11 병장 만기전역',
+    },
+    {
+      schoolName: '일산동고등학교',
+      logo: require('./assets/images/ilsandong.png'),
       subHeader: 'Bachelor of Science in Computer Science',
-      duration: 'September 2013 - April 2017',
-      desc:
-        'Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...',
-      descBullets: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit'],
+      duration: '2011.03 ~ 2014.02 졸업',
+      desc: '인문계 고등학교',
     },
   ],
 };
@@ -139,22 +145,23 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  display: false,
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: 'Frontend/Design', //Insert stack or technology you have experience in
-      progressPercentage: '90%', //Insert relative proficiency in percentage
+      Stack: 'Frontend', //Insert stack or technology you have experience in
+      progressPercentage: '30%', //Insert relative proficiency in percentage
     },
     {
       Stack: 'Backend',
-      progressPercentage: '70%',
+      progressPercentage: '30%',
     },
     {
       Stack: 'Programming',
-      progressPercentage: '60%',
+      progressPercentage: '40%',
     },
   ],
-  displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: true, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -163,32 +170,15 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: 'Software Engineer',
-      company: 'Facebook',
-      companylogo: require('./assets/images/facebookLogo.png'),
-      date: 'June 2018 – Present',
-      desc:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      role: 'ICT 인턴십 인턴',
+      company: '코딩로봇 연구소',
+      companylogo: require('./assets/images/codingrobotlab.png'),
+      date: '2020.03 ~ 2020.06',
+      desc: 'ICT 인턴십으로 학교 연계로 웹 개발 인턴 직무를 수행하였습니다.',
       descBullets: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        'TypeScript & React 를 활용한 웹 개발 개선',
+        'Node.js 서버 개선 및 수정 역할',
       ],
-    },
-    {
-      role: 'Front-End Developer',
-      company: 'Quora',
-      companylogo: require('./assets/images/quoraLogo.png'),
-      date: 'May 2017 – May 2018',
-      desc:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      role: 'Software Engineer Intern',
-      company: 'Airbnb',
-      companylogo: require('./assets/images/airbnbLogo.png'),
-      date: 'Jan 2015 – Sep 2015',
-      desc:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
   ],
 };
@@ -200,37 +190,36 @@ const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: 'saadpasta', // Change to your github username to view your profile in Contact Section.
   showGithubProfile: 'true', // Set true or false to show Contact profile using Github, defaults to true
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: 'Big Projects',
-  subtitle: 'SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH',
+  title: '프로젝트',
+  subtitle: '가장 성과가 컸던 두개의 프로젝트 입니다.',
   projects: [
     {
-      image: require('./assets/images/saayaHealthLogo.webp'),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require('./assets/images/swbot.png'),
+      projectName: '세종대 도와줘 소융봇',
+      projectDesc: '카카오 오픈빌더를 활용한 세종대 챗봇 서비스 입니다.',
       footerLink: [
         {
-          name: 'Visit Website',
-          url:
-            'http://saayahealth.com/',
+          name: '깃허브 페이지 방문하기',
+          url: 'https://github.com/kyun2da/sjswbot',
         },
         //  you can add extra buttons here.
       ],
     },
     {
-      image: require('./assets/images/nextuLogo.webp'),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require('./assets/images/software.png'),
+      projectName: '세종대 사물함 예약 사이트',
+      projectDesc:
+        '소프트웨어학과 학생들을 위한 사물함 사이트 만들기 대회에서 1등을 수상하였습니다. 2021년 부터 세종대 학생들이 사물함 예약으로 사용될 예정입니다.',
       footerLink: [
         {
-          name: 'Visit Website',
-          url:
-            'http://nextu.se/',
+          name: '깃허브 페이지 방문하기',
+          url: 'https://github.com/kyun2da/sejongCabinet',
         },
       ],
     },
@@ -242,57 +231,45 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji('Achievements And Certifications 🏆 '),
-  subtitle:
-    'Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !',
+  title: emoji('성과 🏆 '),
+  subtitle: '상이나 자격증에 관련된 항목입니다.',
 
   achievementsCards: [
     {
-      title: 'Google Code-In Finalist',
+      title: '세종대학교 교내 학술 상',
       subtitle:
-        'First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.',
-      image: require('./assets/images/codeInLogo.webp'),
+        '2019 SW 경시대회 4등, 2020 여름 해커톤 은상, 2020 SW 경시대회 4등, 사물함 예약사이트 경진대회 1등, 2020 겨울 해커톤 은상',
+      image: require('./assets/images/sejong.png'),
       footerLink: [
         {
-          name: 'Certification',
+          name: '자격증 보러가기',
           url:
-            'https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing',
-        },
-        {
-          name: 'Award Letter',
-          url:
-            'https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing',
-        },
-        {
-          name: 'Google Code-in Blog',
-          url:
-            'https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html',
+            'https://drive.google.com/file/d/1X3eHiqz4Ons67Ti645yjpNWvP7wjNqSX/view?usp=sharing',
         },
       ],
     },
     {
-      title: 'Google Assistant Action',
-      subtitle:
-        'Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.',
-      image: require('./assets/images/googleAssistantLogo.webp'),
+      title: 'TOPCIT',
+      subtitle: '수준3',
+      image: require('./assets/images/topcit.jpg'),
       footerLink: [
         {
-          name: 'View Google Assistant Action',
+          name: '자격증 보러가기',
           url:
-            'https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en',
+            'https://drive.google.com/file/d/1Dwr8UeoVt2f5WGVvgQRa4Y3QfYeb_f1W/view?usp=sharing',
         },
       ],
     },
 
     {
-      title: 'PWA Web App Developer',
-      subtitle: 'Completed Certifcation from SMIT for PWA Web App Development',
-      image: require('./assets/images/pwaLogo.webp'),
+      title: 'TOEIC',
+      subtitle: '800',
+      image: require('./assets/images/toeic.png'),
       footerLink: [
-        { name: 'Certification', url: '' },
         {
-          name: 'Final Project',
-          url: 'https://pakistan-olx-1.firebaseapp.com/',
+          name: '자격증 보러가기',
+          url:
+            'https://drive.google.com/file/d/1kKttOxlZJO3xhxlj6wLO-XsWqqOoUuJU/view?usp=sharing',
         },
       ],
     },
@@ -322,7 +299,7 @@ const blogSection = {
         'React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies.',
     },
   ],
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -341,7 +318,7 @@ const talkSection = {
       event_url: 'https://www.facebook.com/events/2339906106275053/',
     },
   ],
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -354,22 +331,21 @@ const podcastSection = {
   podcast: [
     'https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo',
   ],
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji('Contact Me ☎️'),
-  subtitle:
-    'Discuss a project or just want to say hi? My Inbox is open for all.',
-  number: '+92-3243454077',
-  emailAddress: 'saadpasta70@gmail.com',
+  title: emoji('문의 ☎️'),
+  subtitle: '저에 대해 더 궁금한 것이 있다면 주저하지말고 연락주세요!',
+  number: '010-8010-4857',
+  emailAddress: 'kyun2dot@gmail.com',
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: 'twitter', //Replace "twitter" with your twitter username without @
-  display: true, // Set true to display this section, defaults to false
+  display: false, // Set true to display this section, defaults to false
 };
 
 export {
