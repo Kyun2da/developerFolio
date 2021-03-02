@@ -135,7 +135,6 @@ const educationInfo = {
     {
       schoolName: '일산동고등학교',
       logo: require('./assets/images/ilsandong.png'),
-      subHeader: 'Bachelor of Science in Computer Science',
       duration: '2011.03 ~ 2014.02 졸업',
       desc: '인문계 고등학교',
     },
