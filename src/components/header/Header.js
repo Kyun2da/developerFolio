@@ -31,7 +31,7 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? 'dark-menu header' : 'header'}>
-        <a href='' className='logo'>
+        <a href='/' className='logo'>
           <span className='grey-color'> &lt;</span>
           <span className='logo-name'>{greeting.username}</span>
           <span className='grey-color'>/&gt;</span>
@@ -94,9 +94,9 @@ function Header() {
             <a href='#contact'>문의</a>
           </li>
           <li>
-            <a>
+            <div>
               <ToggleSwitch />
-            </a>
+            </div>
           </li>
         </ul>
       </header>

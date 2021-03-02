@@ -109,6 +109,7 @@ export default function socialMedia() {
           href={socialMediaLinks.medium}
           className='icon-button medium'
           target='_blank'
+          rel='noopener noreferrer'
         >
           <i className='fab fa-blogger'></i>
           <span></span>
@@ -120,6 +121,7 @@ export default function socialMedia() {
           href={socialMediaLinks.stackoverflow}
           className='icon-button stack-overflow'
           target='_blank'
+          rel='noopener noreferrer'
         >
           <i className='fab fa-stack-overflow'></i>
           <span></span>
