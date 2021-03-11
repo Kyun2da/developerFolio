@@ -201,7 +201,8 @@ const bigProjects = {
     {
       image: require('./assets/images/swbot.png'),
       projectName: '세종대 도와줘 소융봇',
-      projectDesc: '카카오 오픈빌더를 활용한 세종대 챗봇 서비스 입니다.',
+      projectDesc:
+        '카카오 오픈빌더를 활용한 세종대 챗봇 서비스 입니다. 기술 스택은 Express.js, Sequelize, mysql2, swagger, nodemon, pm2, fcm, nodemailer, pupeteer등이 있습니다.',
       footerLink: [
         {
           name: '깃허브 페이지 방문하기',
@@ -214,7 +215,7 @@ const bigProjects = {
       image: require('./assets/images/software.png'),
       projectName: '세종대 사물함 예약 사이트',
       projectDesc:
-        '소프트웨어학과 학생들을 위한 사물함 사이트 만들기 대회에서 1등을 수상하였습니다. 2021년 부터 세종대 학생들이 사물함 예약으로 사용될 예정입니다.',
+        '소프트웨어학과 학생들을 위한 사물함 사이트 만들기 대회에서 1등을 수상하였습니다. 2021년 부터 세종대 학생들이 사물함 예약으로 사용될 예정입니다. 기술 스택은 React.js, firebase, redux, github page, material-ui등이 있습니다.',
       footerLink: [
         {
           name: '깃허브 페이지 방문하기',
