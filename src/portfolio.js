@@ -215,7 +215,7 @@ const bigProjects = {
       image: require('./assets/images/software.png'),
       projectName: '세종대 사물함 예약 사이트',
       projectDesc:
-        '소프트웨어학과 학생들을 위한 사물함 사이트 만들기 대회에서 1등을 수상하였습니다. 2021년 부터 세종대 학생들이 사물함 예약으로 사용될 예정입니다. 기술 스택은 React.js, firebase, redux, github page, material-ui등이 있습니다.',
+        '소프트웨어학과 학생들을 위한 사물함 사이트 만들기 대회에서 1등을 수상하였습니다. 2021년 부터 세종대 학생들이 사물함 예약으로 사용될 예정입니다. 기술 스택은 React.js, firebase, redux, github page, material-ui등이 있습니다. 코드는 kyun 브랜치를 참고하시면 됩니다.',
       footerLink: [
         {
           name: '깃허브 페이지 방문하기',
