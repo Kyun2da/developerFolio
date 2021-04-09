@@ -37,17 +37,20 @@ const socialMediaLinks = {
 const skillsSection = {
   title: '기술 스택',
   subTitle:
-    '자바스크립트 생태계를 좋아해서 자바스크립트와 관련된 기술 스택들을 주로 익혔습니다.',
+    '많은 플랫폼을 개발할 수 있는 자바스크립트 생태계를 좋아해서 자바스크립트와 관련된 기술 스택들을 주로 익혔습니다.',
   skills: [
-    emoji('⚡ Express를 활용한 서버 구축이 가능합니다.'),
     emoji(
       '⚡ 리액트를 활용한 SPA 개발이 가능합니다. Redux와 같은 상태 라이브러리를 프로젝트에 접목 시켜본 경험이 있습니다.'
     ),
+    emoji('⚡ Express를 활용한 백엔드 서버 개발이 가능합니다.'),
     emoji(
       '⚡ 시퀄라이즈와 같은 ORM을 사용할 수 있고 보통 Mysql을 사용하여 DB를 설계하고 구축합니다.'
     ),
     emoji(
-      '⚡ 현재는 Express는 Nest.js, React에도 TypeScript를 접목시키기 위해 타입스크립트를 열심히 공부중에 있습니다.'
+      '⚡ github action을 사용해 자동배포 설정을 해본 경험이 있고, aws나 netlify등으로 프론트와 백엔드 서버를 구축한 경험이 있습니다.'
+    ),
+    emoji(
+      '⚡ 현재는 프론트는 React, 백엔드는 Express를 사용하여 주로 개발하고 TypeScript와 Nest.js를 공부중에 있습니다.'
     ),
   ],
 
@@ -80,10 +83,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: 'fab fa-node',
     },
     {
-      skillName: 'npm',
-      fontAwesomeClassname: 'fab fa-npm',
-    },
-    {
       skillName: 'mysql',
       fontAwesomeClassname: 'fas fa-database',
     },
@@ -113,6 +112,17 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
+      schoolName: '일산동고등학교',
+      logo: require('./assets/images/ilsandong.png'),
+      duration: '2011.03 ~ 2014.02 졸업',
+      desc: '인문계 고등학교',
+    },
+    {
+      schoolName: '육군 9사단',
+      logo: require('./assets/images/soldier.jpg'),
+      duration: '2016.02 ~ 2017.11 병장 만기전역',
+    },
+    {
       schoolName: '세종대학교',
       logo: require('./assets/images/sejong.png'),
       subHeader: '디지털콘텐츠학과(소프트웨어학과)',
@@ -121,22 +131,13 @@ const educationInfo = {
         '프로그래밍 기본을 익히고 적성과 흥미를 찾기위해 이것저것 많은 경험을 해보았습니다.',
       descBullets: [
         'C++을 활용한 게임 만들기',
-        '광진구 연계 앱 인벤터 멘토링',
+        '광진구 연계 앱 인벤터 멘토링 멘토',
         '데이터 분석 및 데이터 시각화 프로젝트',
         '안드로이드를 활용한 외국인 학교 도움 프로젝트',
         '유니티를 활용한 가구 AR 배치 프로젝트',
+        '세종대학교 사물함 경진대회 프로젝트',
+        '카카오톡 오픈빌더를 활용한 조교 도움 챗봇 서비스 프로젝트',
       ],
-    },
-    {
-      schoolName: '육군 9사단',
-      logo: require('./assets/images/soldier.jpg'),
-      duration: '2016.02 ~ 2017.11 병장 만기전역',
-    },
-    {
-      schoolName: '일산동고등학교',
-      logo: require('./assets/images/ilsandong.png'),
-      duration: '2011.03 ~ 2014.02 졸업',
-      desc: '인문계 고등학교',
     },
   ],
 };
@@ -175,8 +176,9 @@ const workExperiences = {
       date: '2020.03 ~ 2020.06',
       desc: 'ICT 인턴십으로 학교 연계로 웹 개발 인턴 직무를 수행하였습니다.',
       descBullets: [
-        'TypeScript & React 를 활용한 웹 개발 개선',
+        'TypeScript & React 를 활용한 Web IDE UI와 로직 개선 및 기능 추가',
         'Node.js 서버 개선 및 수정 역할',
+        '리액트를 활용한 홈페이지 채팅 모듈 만들기',
       ],
     },
   ],
